@@ -21,6 +21,7 @@
             background-color: white;
             align-items: center;
             position: fixed;
+            z-index: 1000;
         }
 
         .nav1 {
@@ -40,15 +41,16 @@
 
         /* BG-IMAGE */
         .mainimg {
-            background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+            background-image: url(https://www.w3schools.com/w3images/architect.jpg); 
             height: 92vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .mainimgtxt {
-            color: black;
+            color: white;
             font-family: verdana, sans-serif;
             font-size: 250%;
             display: flex;
@@ -77,11 +79,13 @@
         .proimg {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .proimg2 {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 1%;
         }
 
@@ -96,6 +100,8 @@
             background-color: black;
             width: 10%;
             height: 5%;
+            box-sizing: border-box;
+            padding: 5px;
         }
 
         /* ABOUT */
@@ -114,6 +120,7 @@
         .abimg {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             font-family: verdana, sans-serif;
         }
 
@@ -207,9 +214,9 @@
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="nav1"><b>BR </b> Architects</div>
-        <a href="Projects">Projects</a> &nbsp; &nbsp; &nbsp;
-        <a href="About">About</a> &nbsp; &nbsp; &nbsp;
-        <a href="Contact">Contact</a> &nbsp; &nbsp; &nbsp;
+        <a href="#Projects">Projects</a> &nbsp; &nbsp; &nbsp;
+        <a href="#About">About</a> &nbsp; &nbsp; &nbsp;
+        <a href="#Contact">Contact</a> &nbsp; &nbsp; &nbsp;
     </div>
 
 
@@ -220,7 +227,7 @@
 
 
     <!-- PROJECT's SECTION -->
-    <div class="project">
+    <div class="project" id="Projects">
         Projects
         <hr>
         <div class="proimg">
@@ -264,7 +271,7 @@
 
 
     <!-- ABOUT SECTION -->
-    <div class="about">
+    <div class="about" id="About">
         About
         <hr>
         <div class="abouttxt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi laudantium, provident
@@ -307,7 +314,7 @@
 
 
     <!-- CONTACT -->
-    <div class="contact">
+    <div class="contact" id="Contact">
         Contact
         <hr>
         <div class="form">
