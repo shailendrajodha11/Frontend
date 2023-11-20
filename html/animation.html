@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+        }
+
+
+        /* 1ST Animation */
+        /* .box{
+            width: 5vw;
+            height: 5vh;
+            border: 2px solid black;
+            background-color: aquamarine;
+            border-radius: 20px;
+
+            animation-name: shailendra;
+            animation-duration: 11s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
+            animation-timing-function: ease-out;
+
+            position: absolute;
+        }
+
+        @keyframes shailendra {
+                from{
+                    width: 10px;
+                    height: 15px;
+                    background-color: black;
+                    left: 0%;
+                }
+                to{
+                    width: 500px;
+                    height: 500px;
+                    background-color: aqua;
+                    left: 30%;
+                } 
+            }
+
+        @keyframes shailendra {
+            from{
+                width: 2%;
+            }
+            to{
+                width: 90%;
+            }
+        } */
+
+
+        /* 2nd Animation */
+        .box{
+            width: 15vw;
+            height: 4vh;
+            border: 2px solid gray;
+            position: absolute;
+            color: white;
+            background-color: black;
+
+            animation-name: shailen;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes shailen {
+            0%{
+                top: 0px;
+                left: 0px;
+                border-radius: 0%;
+            }
+            25%{
+                top: 0px;
+                left: 500px;
+                border-radius: 10px;
+                background-color: purple;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+                border-radius: 20px;
+                background-color: green;
+            }
+            75%{
+                top: 500px;
+                left: 1000px;
+                border-radius: 30px;
+                background-color: blue;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                border-radius: 0px;
+                background-color: red;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">No Signal</div>
+</body>
+</html>
